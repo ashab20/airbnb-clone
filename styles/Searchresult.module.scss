@@ -1,0 +1,171 @@
+@import './variabal.module';
+
+.Searchresult{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid $border-box-color;
+    border-top: .5px solid $border-box-color;
+
+    .Searchresult_img{
+        width: 35rem;
+        padding:  0 1rem 0 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        object-fit: cover;
+        &:hover{
+            transform: scale(1.02);
+            
+        }
+    }
+    .Searchresult_info{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(45%,1fr));
+        // grid-column-gap: .5rem;
+        grid-auto-flow: dense;
+        justify-content: space-between;
+        width: 100%;
+
+        .Searchresult_info_top{
+            font-size: 1.4rem;
+            color: $palette-foggy;
+            font-weight: 400;
+            height: 8rem;
+
+
+            .Searchresult_title{
+                color: $palette-hof;
+                font-size: 1.6rem;
+                font-weight: 400;
+
+                .Searchresult_line{
+                    color: $palette-hof;
+                    letter-spacing: 0.1rem;            
+                
+                
+                    &::after{
+                    content: "";
+                    
+                    
+                    vertical-align: baseline;
+                }
+                }
+            }
+        }
+        .Searchresult_heart{
+            color: red;
+            padding: 2rem;
+            text-align: right;
+            cursor: pointer;
+            
+        }
+        // .Searchresult_info_bottom{
+        //     display: grid;
+        //     grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+        //     justify-content: space-between;
+        //     width: 100%;
+        .description{
+            grid-column: span 2;
+            font-size: 1.4rem;
+            color: $palette-foggy;
+            font-weight: 400;
+        }
+            .Searchresult_star{
+                display: flex;
+                // grid-template-rows: 1fr;
+                // width: 15rem;
+                text-align: left;
+                
+                // padding: .5rem;
+                .Searchresult_star_tag{
+                    font-size: 3.2rem;
+                    color: red;
+                    padding:  1.5rem 0 0 0 ;
+                    
+                }
+                .Searchresult_star_p{
+                    
+                    padding: 0 1rem 1rem 0;
+                    color: #222222;
+                    font-size: 1.5rem;
+                }
+                
+            }
+            .Searchresult_price{
+                font-size: 1.2rem;
+                color: #222222;
+                line-height: .5rem;
+                font-weight: 400;
+                text-align: right;
+
+                .Searchresult_price_time{
+                    color: $palette-hof;
+                    font-weight: 300;
+                    
+                }
+
+                .Searchresult_price_P{
+                    font-size: 1.5rem;
+                    color: $palette-foggy;
+                    
+                    &:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                        
+                    }
+                }
+            }
+
+        }
+    // }
+}
+
+@media (max-width:700px){
+    .Searchresult{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(70%,1fr));
+        grid-gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+
+        .Searchresult_img{
+            width: 100%;
+        }
+        .Searchresult_info{
+            width: 100%;
+            grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+            position: relative;
+            justify-self: space-between;
+            
+        }
+        .Searchresult_heart{
+            // position:relative;
+            // bottom: 40%;
+            font-size: .5rem;
+            // color: #222222 !important;
+                       // z-index: 4;
+            // background: #ddd;
+            
+            
+
+        }
+
+
+    }
+}
+@media (max-width:500px){
+    .Searchresult{
+        padding: 2rem;
+
+        .Searchresult_heart{
+            position:sticky;
+            bottom: 40%;
+            right: 1%;
+            font-weight: 900;
+            background: #ddd;
+            clip-path:circle(20px at 192px 28px);
+        }
+    }
+}

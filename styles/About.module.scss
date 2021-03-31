@@ -1,0 +1,315 @@
+@import './variabal.module' ;
+
+.About{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 10rem;
+    
+    margin: 0;
+
+
+.about_wrapper{
+        max-width: 90%;
+        margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5rem;
+    grid-auto-flow: dense;
+    
+    .title{
+        font-size: 3.4rem;
+        justify-content: right;
+        align-items: right;
+        color: #222222;
+        max-width: 60rem;
+        
+    }
+    .text{
+        font-size: 1.9rem;
+        font-weight: 300;
+        grid-auto-flow: dense;
+        line-height: 2.4rem !important;
+        grid-row: span 2;
+        color: rgb(34, 34, 34) !important;
+        max-width: 50rem;
+    }
+    .btn{
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 24px !important;
+        color: rgb(34, 34, 34) !important;
+        padding: .4rem;
+        width: 12rem;
+        height: 4rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        &:hover{
+            position: relative;
+            transform: scale(1.03);
+            filter: brightness(1.2);
+            transition: all 1s;
+        }
+    }
+}
+
+// === === Live === ===
+
+.live{
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    height: auto;
+    
+    // grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+    // grid-template-rows: 1fr;
+    // grid-column-gap: 1rem;
+    // grid-auto-flow: dense;
+
+    .title{
+        font-size: 3.4rem;
+        justify-content: right;
+        align-items: right;
+        color: #222222;
+        max-width: 60rem;
+        
+    }
+}
+
+
+.host{
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    padding: 5rem 0 ;
+    
+
+    .host_text{
+       position: absolute;
+       color: whitesmoke;
+       width: 40vw;
+       padding: 8rem 8rem;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       
+       .host_title{
+        font-size: 5rem;
+       }
+
+       .host_p_text{
+        font-size: 1.9rem;
+        
+       }
+       .Host_btn{
+            padding: 1rem 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: #222222;
+            background: #fff;
+            border:none;
+            border-radius: 5px;
+            outline: none;
+            
+       }
+     
+
+    }
+    .host_img{
+        width: 100%;
+        min-height: 300px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+}
+
+
+}
+
+// === === Card === ===
+.Card{ 
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-auto-flow: dense;
+    z-index: 1;
+
+.Card_wrapper{
+    min-width: 90%;
+    cursor: pointer;
+
+    .Card_image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        &:hover{
+            
+            transform: scale(1.03);
+            filter: brightness(1.2);
+            transition: all 1s;
+            
+        }
+    }
+
+    .Card_title{
+        font-size: 1.6rem;
+        color: #222222;
+    }
+}
+}
+@media (min-width:1141px) and(max-width:1500px){
+    .About
+    {.host{
+
+        
+        .host_text{
+            width: 40%;
+            padding: 4rem 8rem;
+           
+            .host_title{
+                font-size: 3.5rem;
+            }
+            .host_p_text{
+                font-size: 1.7rem;
+            }
+            .Host_btn{
+                font-size: 1.7;
+            }
+        }
+        .host_img{
+            height: 35vh;
+        }
+    }
+    
+
+}
+}
+
+@media (min-width:745px) and (max-width:1140px){
+    .About{
+        font-size: 9px;
+        padding: 2.5rem;
+        .about_wrapper{
+            grid-template-columns: repeat(auto-fit,minmax(45%,1fr));
+            grid-column-gap: 2rem;
+            .title{
+                font-size: 2.5rem;
+                
+            }
+        }
+        .Card{
+                      
+            grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+            grid-template-rows: 1fr;
+            grid-column-gap: 1rem;
+            grid-auto-flow: dense;
+        }
+
+        .host{
+
+        
+            .host_text{
+                position: absolute;
+                width: 40%;
+                height: 30vh;    
+                padding: 4rem 5rem;
+                
+                .host_title{
+                    font-size: 3.2rem;
+                }
+                .host_p_text{
+                    font-size: 1.6rem;
+                }
+                .Host_btn{
+                    font-size: 1.6;
+                }
+            }
+            .host_img{
+                
+                height: 30vh;
+            }
+        }
+}
+}
+@media screen and (max-width:744px){
+    .About{
+        padding: 2rem;
+
+        .about_wrapper{
+            grid-template-columns: repeat(auto-fit,minmax(70%,1fr));
+            grid-template-rows: 1fr;
+            grid-row-gap: 1rem;
+            grid-auto-flow: dense;
+            .text{
+                line-height: .5rem;
+                grid-row: span unset;
+            }
+            .title{
+                font-size: 2.4rem;
+                max-width: 95%;
+            }
+        }
+        .live{
+            .title{
+                font-size: 3rem;
+
+            }
+            
+        }
+
+    .Card{ 
+            
+            padding: 0;            
+            grid-template-columns: repeat(auto-fit,minmax(45%,1fr));
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 1rem;
+            grid-auto-flow: dense;
+            cursor: pointer;
+            
+            
+        }  
+        
+    .host{
+
+        
+        .host_text{
+            position: relative;
+            background: #000;
+            width: 100%;
+            height: 30vh;
+            justify-content: center;
+            text-align: center;
+            
+            padding: 2rem 2rem;
+            border-radius: 15px 15px 0px 0px;
+            .host_title{
+                font-size: 3rem;
+            }
+            .host_p_text{
+                font-size: 1.5rem;
+            }
+            .Host_btn{
+                font-size: 1.5;
+            }
+        }
+        .host_img{
+            border-radius: 0px 0px 15px 15px;
+            height: 25vh;
+        }
+    }
+
+    }
+}

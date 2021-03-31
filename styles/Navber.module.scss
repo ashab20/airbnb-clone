@@ -1,0 +1,424 @@
+@import './variabal.module.scss';
+.header_wrpper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(5rem,1fr));
+    justify-content: space-between;
+    // background: black;
+    background: $background-color !important;
+    box-shadow:$secondary-box-shadow;
+    transition: all 1s;
+   
+
+    top: 0;
+    
+    padding:2rem 6% 2rem 8%;
+
+
+    .header_icon{
+        width: 10rem;
+        height: 5rem;
+        object-fit: contain;
+        font-size: 2rem;
+        justify-self: left;
+        cursor: pointer;
+        
+    }
+
+
+
+
+    .SearchDate{
+        min-width: 90%;
+        
+        overflow: hidden;
+        position: absolute;
+        top: 13rem;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        border-radius: 15px !important;
+        font-size: 2rem;
+        color: whitesmoke;
+        animation: htd 1s linear;
+
+        @keyframes htd {
+            0%{height: 50%;}
+            80%{height: 500%;}
+            100%{height: auto;}
+            
+        }
+
+        .DateInp{
+            // background: white;
+            // overflow: hidden;
+            position: relative;
+            color: #e02b2b;
+            width: 30%;
+            margin:auto;
+            bottom: 11rem;
+            right: 12rem;
+            padding: 1rem;
+            height: 10rem;
+            justify-content: right;
+            // line-height: .5rem;
+            // font-size: 1.6rem;
+            border-radius:0 0 15px 15px ;
+            
+            .DateInp_h2{
+                font-size: 1.7rem;
+                padding: .5rem 0 0 0;
+                color:#222222;
+                text-align: center;
+                justify-self: center;
+                
+
+                .DateInp_people{
+                    font-size: 2.5rem !important;
+                    padding:  1rem .5rem 0 .5rem;
+                    color:$palette-ondo;
+                }
+            }
+            .DateInp_input{
+                outline: none;
+                border: none;
+                width: 10rem;
+                font-size: 2rem;
+                text-align: right;
+                color: $palette-foggy;
+                font-weight: 300;
+                background-color: transparent;
+
+            }
+            .DateInp_btn{
+                // font-size: 1.3rem;
+                font-family: Roboto;
+                
+                border-radius: 5px;
+                color: black;
+                border: 1px solid $border-box-color;
+                // padding: 1rem;
+                // bottom:  -2rem;
+                font-size: 1.4rem;
+                padding: 1rem;
+                top:  10rem;
+                height: 5rem;
+                text-align: left;
+                background: white;
+                // text-align: left;
+
+                &:hover{
+                    border: 1px solid #222222;
+                    color: white;
+                    transition: all 1s;
+                    background: $gradient-linear-gradient-color;
+                }
+            }
+        }
+    }
+
+    .heder_center{
+        display:grid;
+        align-items: center;
+
+        &:hover{
+            .heder_center_option{
+                display: block;
+            }
+        }
+        // justify-content: space-between;
+        .heder_center_search{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10%,1fr));
+            
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            min-width: 15rem;
+            margin: auto;
+            padding:0 1rem;
+            height: 5rem;
+            border: 1px solid $border-box-color;
+            cursor: pointer;
+            border-radius: 999px;
+
+        &:hover{
+            box-shadow: $secondary-box-shadow;
+            transition: all 1s;
+            
+        }
+        .SearchIcon{
+            color: whitesmoke;
+            background: $palette-rausch;
+            border-radius: 100px;
+            justify-self: right;
+            font-size: 3rem;
+            padding: .5rem;
+
+          
+            
+            
+        }
+
+
+        input{
+            border:0px;
+            font-size: 1.5rem;
+            padding: .5rem;
+            color: $palette-black;
+            cursor: pointer;
+            background: transparent;
+            color-adjust: initial;
+            outline-width: 0;
+            justify-self: left;
+        }
+
+      
+    }
+    // .rdrDateRangePickerWrapper{
+    //     position: absolute !important;
+    // }
+
+    .heder_center_map{
+        display: flex;
+        padding: .5rem;
+        font-size: 1.1rem;
+        color: #e02b2b;
+        justify-content: center;
+        align-items: center;
+    }    
+            
+    
+    }
+    .heder_center_option{
+        margin: auto;
+        display: none;
+        
+        .ul_link{
+            position: absolute;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            margin:1px auto;
+            max-width: 50rem;
+            left: 0;right: 0;
+            font-size: 1.4rem;
+            background: $background-color;
+            height: 5rem;
+            border-radius: 15px;
+            box-shadow: $secondary-box-shadow;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+            grid-template-rows: 1fr;
+            color: #222222;
+            grid-gap: 5px;
+            grid-auto-flow: dense;
+
+            .li_link{
+                text-align: center;
+            //     .spanL{
+            //     &:hover{
+
+            //     &::after{
+            //         content: "";
+            //         border:5px solid #222222;
+                    
+            //         width: 10%;
+            //     }
+            // }
+            // }
+        }
+    }
+    
+
+        }
+
+    }
+
+
+    .header_right{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(2rem,1fr));
+        
+        
+        font-size: 5rem;
+        
+        justify-self: right;
+        min-width: 10rem;
+        
+        max-width: 30rem;
+        .lang{
+            display: flex;
+            justify-content: center;
+            // padding:  1rem 0 0 0 ;
+            min-width: 10rem;
+            font-size: 2rem;
+
+            .Icons{
+                font-size: 2rem;
+                justify-self: right;
+                margin: 1rem .5rem 0 .5rem;
+                
+                
+                
+            }
+            p{
+                font-size: 1.6rem;
+                width: 13rem;
+                font-family: roboto;
+                font-weight: 500;
+                margin: 1rem 0 0 0;
+                
+                justify-self: end;
+                
+                text-align: end;
+                
+            }
+    
+
+        } 
+        .avatar{
+            font-size: 1rem;
+            height: 3rem;
+            width: 3rem;
+            color: $palette-arches12;
+            box-shadow: $secondary-box-shadow;
+        }
+        .circle{
+            display: flex;
+            justify-content: space-around;
+            // font-size: 1rem !important;
+            border: 1px solid $border-box-color;
+            border-radius: 999px;
+            background: #fff;
+            color: black;
+            padding: 0.1rem .4rem;
+            align-items: center;
+            width: 8rem;
+            height: 4rem;
+        }
+      
+
+    
+}
+
+@media (min-width:745px) and (max-width:1120px){
+    
+ 
+    .SearchDate{
+        
+        
+        object-fit: contain;
+        
+        .DateInp{
+            .DateInp_input{
+                text-align: right;
+                left: 3rem;
+                font-size: 1rem;
+            }
+        
+        .DateInp_btn{
+            position: absolute;
+            font-size: 1.2rem;
+            padding: 1rem;
+            top:  11rem;
+            height: 5rem;
+            text-align: left;
+            background: white;
+        }
+    }
+    }
+    
+    .heder_center{
+        
+        padding: 0;
+        margin: 0;
+        
+       
+        
+        
+            .heder_center_option{
+                padding: 0;
+                margin: auto;
+                justify-content: center;
+                
+                
+                
+                 .ul_link{
+                    //  padding: 0;
+                     font-size: 1.2rem;
+                     width: 45rem;
+                     position: absolute;
+                     
+                     justify-content: center;
+                     text-align: center;
+                     align-items: center;
+                     left: 0%;right: 0;
+                     margin: 2px auto;
+                     background: $background-color;
+                     height: 5rem;
+                     border-radius: 15px;
+                     box-shadow: $secondary-box-shadow;
+                    
+
+                    
+                 }
+    }
+}
+
+}
+@media screen and (max-width:744px){
+
+.header_wrpper{
+    overflow-x: hidden;
+    padding: 1rem .1rem 1rem 1rem;
+    grid-template-columns:auto-fit,1fr 2fr 1fr ;
+    grid-column-gap: .5rem;
+    
+    .SearchDate{
+        width: 97%;
+        object-fit: contain;
+        
+        .DateInp{
+        
+        
+        .DateInp_btn{
+            font-size: 1rem;
+            top: 2rem;
+        }
+    }
+    }
+    .header_icon{
+        max-width: 8rem;
+        
+    }
+    .heder_center{
+        width: 100%;
+       
+
+        .heder_center_option{
+            .ul_link{
+                position: absolute;                     
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                left: 0%;right: 0;
+                margin: 2px auto;
+            }
+        }
+    }
+    .header_right{
+        left: 0;
+        .Icons{
+            display: none;
+        }
+        p{
+           display:none;
+       }
+}
+
+
+
+}
+    
+}

@@ -1,0 +1,113 @@
+@import './variabal.module';
+
+.Experience{
+    width: 100%;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 15rem;    
+    margin: 0;
+
+    .title{
+        font-size: 4rem;
+        color: #222222;
+        line-height: .5rem;
+        padding: 0rem 4rem;
+    }
+    .text{
+        font-size: 2.5rem;
+        color: #222222;
+        line-height:.5rem;
+        padding: 0rem 4rem;
+    }
+    .exCard_box{
+        max-width: 95%;
+        margin: auto;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(15%,1fr));
+        grid-column-gap: 2rem;
+        grid-auto-flow: dense;
+        .ImgBox{
+            
+            .img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                &:hover{
+                    position: relative;
+                    transform: scale(1.03);
+                    filter: brightness(1.2);
+                    transition: all 1s;
+                }
+                
+            }
+            .img_title{
+                color: #222222;
+                font-size: 2rem;
+                line-height: .5rem;
+                font-weight: 500;
+            }
+            .img_text{
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1141px) and(max-width:1500px){
+    .Experience{
+        padding: 12rem;
+        
+        .title{
+            padding: 0rem 2rem;
+        }
+        .text{
+            padding: 0rem 2rem;
+        }
+    
+    
+    }
+}
+
+@media (min-width:744px) and(max-width:1141px){
+    .Experience{
+        padding: 5rem;
+        .title{
+            padding: 0rem 2rem;
+            
+        }
+        .text{
+            padding: 0rem 2rem;
+            font-size: 1.8rem;
+        }
+       
+    
+    }
+   
+}
+
+@media (max-width:744px) {
+    .Experience{
+        padding: 4rem;
+        height: 100%;
+        .title{
+            padding: 0rem 2rem;
+            font-size: 2.5rem;
+        }
+        .text{
+            padding: 0rem 2rem;
+            font-size: 2rem;
+            line-height: unset;
+        }
+        .exCard_box{
+            grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+        }
+    
+    
+    }
+}
+
