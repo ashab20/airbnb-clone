@@ -10,7 +10,7 @@ import PeopleIcon from '@material-ui/icons/People'
 import Link from 'next/link'
 
 
-function SearchDate() {
+function SearchDate({ close}) {
   const [startDate, setStartDate] = useState(new Date())
   const [endDate, setEndDate] = useState(new Date())
 
@@ -69,7 +69,7 @@ function SearchDate() {
             Search AIRBNB
         </Button>
           </Link>
-        <Button className={styles.DateInp_btn}>Close</Button>
+        <Button className={styles.DateInp_btn} onClick={ close}>Close</Button>
       </div>
     </div>
   )

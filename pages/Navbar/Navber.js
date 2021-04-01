@@ -22,7 +22,9 @@ function Navber({key,...props}) {
   const { router } = { ...props };
   
   const dataget = (router.query.datapss) ||(router.query.startdate);
-  console.log(dataget);
+
+
+
   return (
     <>
       <div className={styles.header_wrpper} >
@@ -35,9 +37,10 @@ function Navber({key,...props}) {
         </Link>
 
         {showOption && (
+          
           <div className={styles.SearchDate}>
             
-            <SearchDate/>
+            <SearchDate close={() => setShowOption(false)} />
           </div>
         )}
 
