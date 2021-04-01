@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from '../../../styles/Navber.module.scss'
+import  '../../../styles/Navber.module.scss'
 import { DateRangePicker } from 'react-date-range'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
@@ -44,7 +45,7 @@ function SearchDate() {
     <div className={styles.DateContent}>
       <DateRangePicker
        
-        className={styles.DatePicker}
+        className="DatePicker"
         ranges={[selectionRange]}
         onChange={handleSelect}
         // onDatesChange={({ startDate, endDate }) => handleSelect({ startDate, endDate })} 
@@ -68,7 +69,7 @@ function SearchDate() {
             Search AIRBNB
         </Button>
           </Link>
-        
+        <Button className={styles.DateInp_btn}>Close</Button>
       </div>
     </div>
   )

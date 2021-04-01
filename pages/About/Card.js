@@ -1,28 +1,6 @@
 import styles from '../../styles/About.module.scss'
 import { useState } from 'react'
-
-const CardName = [
-  {
-    Id: "00140",
-    ImgUrl: './Images/enteir.webp',
-    ImgName: 'Entire Homes',
-  },
-  {
-    Id: "02100",
-    ImgUrl: './Images/pic2.webp',
-    ImgName: 'Unique stays',
-  },
-  {
-    Id: "000310",
-    ImgUrl: './Images/pic3.webp',
-    ImgName: 'Cabins and cottages',
-  },
-  {
-    Id: "0100400",
-    ImgUrl: './Images/pic4.webp',
-    ImgName: 'Pets allowed',
-  },
-]
+import CardName from './Card.json'
 
 function Cardhome() {
   const [CardFind] = useState(CardName)

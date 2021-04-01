@@ -42,7 +42,7 @@
 
                 .Searchresult_line{
                     color: $palette-hof;
-                    letter-spacing: 0.1rem;            
+                    letter-spacing: 0.5rem;            
                 
                 
                     &::after{
@@ -158,6 +158,14 @@
 @media (max-width:500px){
     .Searchresult{
         padding: 2rem;
+
+
+        .Searchresult_title{
+            line-height: 2rem;
+        }
+        .description{
+            line-height: 4rem;
+        }
 
         .Searchresult_heart{
             position:sticky;

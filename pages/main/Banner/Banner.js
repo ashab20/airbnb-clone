@@ -6,7 +6,7 @@ function Banner() {
             
         <div className={styles.Banner}>
             
-            <img className={styles.bannerImage} src="https://a0.muscache.com/im/pictures/166791ff-bc82-4b88-ba3d-49be1d462dce.jpg?im_w=2560" alt="" />
+            <img className={styles.bannerImage} src="Images/banner_airbnb.webp" alt="" />
 
             <h2 className={styles.Title}>Made Possible By hosts</h2>
         </div>

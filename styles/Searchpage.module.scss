@@ -13,8 +13,10 @@
             grid-template-columns: repeat(auto-fit, minmax(40%,1fr));            
             align-items: center;
             margin: auto;
+            margin-top: 2rem;
             left: 0;
             right: 0;
+            
             justify-self: center;
             min-width: 30rem;
             max-width: 40rem;
@@ -36,6 +38,7 @@
             justify-self: left;
             margin: auto;
             outline: none;
+            
             border: none;
             font-size: 1.6rem;            
             padding: 1rem;

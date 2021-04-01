@@ -90,7 +90,7 @@
    
 }
 
-@media (max-width:744px) {
+@media (min-width:500px) and  (max-width:744px) {
     .Experience{
         padding: 4rem;
         height: 100%;
@@ -109,5 +109,28 @@
     
     
     }
+}
+
+@media (max-width:500px) {
+    .Experience{
+        padding: 4rem;
+        height: 100%;
+        .title{
+            padding: 0rem 2rem;
+            font-size: 2.5rem;
+        }
+        .text{
+            padding: 0rem 2rem;
+            font-size: 2rem;
+            line-height: unset;
+        }
+        .exCard_box{
+            grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+            grid-row-gap: 1rem;
+        }
+    
+    
+    }
+
 }
 

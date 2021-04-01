@@ -11,7 +11,6 @@ import { withRouter } from 'next/router'
 import MapIcon from '@material-ui/icons/Map';
 
 
-
 function Navber({key,...props}) {
   const [dataSearch,setDataSearch] = useState('')
 
@@ -30,8 +29,8 @@ function Navber({key,...props}) {
         <Link href="/">
           <img
             className={styles.header_icon}
-            src="./Images/airbnb_full_icon.png"
-            alt="Sufit" onClick={() => setShowOption(false)}
+            src={`Images/airbnb_full_icon.png` ? `Images/airbnb_full_icon.png`: `Images/sufit-icon.png`}
+            alt="Airbob" onClick={() => setShowOption(false)}
           />
         </Link>
 
@@ -43,17 +42,17 @@ function Navber({key,...props}) {
         )}
 
 
-        <div className={styles.heder_center} >
+        <div className={styles.header_center} >
          
           {dataget ?
-            <div className={styles.heder_center_map} onClick={() => setShowOption(!showOption)}>
+            <div className={styles.header_center_map} onClick={() => setShowOption(!showOption)}>
               <h2> <MapIcon /> Open map</h2>
             </div> :
           <div
-            className={styles.heder_center_search}
+            className={styles.header_center_search}
             onClick={() => setShowOption(!showOption)}
           >
-              <input type="text" placeholder="Click search ....."
+              <input className={ styles.header_center_Input} type="text" placeholder="Click and search ....."
               onChange={(e) => setDataSearch(e.target.value)} onClick={() => setShowOption(false)} />
               <Link
               href={{
@@ -69,7 +68,7 @@ function Navber({key,...props}) {
           
           {
               (
-               <div className={styles.heder_center_option}>
+               <div className={styles.header_center_option}>
                <ul className={styles.ul_link}>
                  <li className={styles.li_link}>
                    <a href="#" onClick={() => setShowOption(!showOption)}>Places to stay</a>
@@ -103,7 +102,9 @@ function Navber({key,...props}) {
                 alignItems: 'center',
               }}
             />
+            <Link href="/Login">
             <Avatar className={styles.avatar} />
+            </Link>
           </span>
         </div>
       </div>

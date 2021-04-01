@@ -14,7 +14,10 @@ function About() {
           anti-Asian hate crimes has alarmingly grown since the pandemic, and we
           call on our allies to join us in standing up to these injustices.
         </p>
-        <Link href="/Searchpage">
+        <Link href={{
+          pathname: '/Searchpage',
+          query: { datapss: "Great" }
+        }}>
           <button className={styles.btn}>Learn more</button>
         </Link>
       </div>

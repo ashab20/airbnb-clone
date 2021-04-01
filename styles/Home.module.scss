@@ -1,12 +1,22 @@
 @import './variabal.module';
 
+
+
 .container {
-  // min-height: 100vh;
-  // padding: 0 0.5rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+ 
+  
+  .loading{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    left: 0;right: 0;
+    height: 100vh;
+  }
 }
 
 .header{

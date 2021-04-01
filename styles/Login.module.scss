@@ -1,0 +1,106 @@
+@import './variabal.module';
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    .main{
+        
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.4rem;
+        min-width: 30rem;
+        max-width: 55rem;
+        padding: 10rem;
+        overflow-x: hidden;
+
+
+       
+        .from_controller{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+            grid-auto-flow: dense;
+            grid-row-gap: 1.5rem;
+            grid-column-gap:.5rem ;
+            overflow: hidden;
+            margin: auto;
+
+
+            .login_title{
+                font-size: 4rem;
+                justify-self: center;
+            }
+            
+            .from_control_input{
+                padding: 1rem;
+                border-radius: 1.5rem;
+                outline: none;
+                border: 1px solid $border-box-color;
+                    &:hover{
+                        box-shadow: $box-shadow;
+                        transition: all 1s ;
+                    }
+
+            }
+            .login_btn{
+                padding: 1rem;
+                width: 15rem;
+                font-size: 1.7rem;
+                font-weight: 500;
+                background: $gradient-linear-gradient-color;
+                outline: none;
+                cursor: pointer;
+                color: white;
+                justify-self: center;
+                border-radius: 15rem;
+                outline: none;
+                border: 1px solid transparent;
+                overflow: hidden;
+
+                &:hover{
+                    background: white;
+                    border: 1px solid #222222;
+                    color:  #222222;
+                    transition: border 2s;
+                }
+
+            }
+
+        }
+
+        .from_indicator{
+            padding: 1rem;
+            width: 100%;
+            justify-content: space-between;
+            display: grid;
+            grid-template-columns:1fr 1fr ;
+            text-align: left;
+            .cancelbtn{
+                border:1px solid $palette-bobo;
+                padding: .5rem;
+                border-radius: 15px;
+                &:hover{
+                border:1px solid $palette-hof;
+                transition: all 2s;
+                cursor: pointer;
+
+                }
+
+
+            }
+            .psw{
+                padding: 1rem;
+
+            }
+        }
+    }
+
+}
+
+@media (max-width:500px){
+
+}

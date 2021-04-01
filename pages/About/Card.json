@@ -1,0 +1,22 @@
+[
+    {
+      "Id": 14086,
+      "ImgUrl": "./Images/enteir.webp",
+      "ImgName": "Entire Homes"
+    },
+    {
+      "Id": 2100,
+      "ImgUrl": "./Images/pic2.webp",
+      "ImgName": "Unique stays"
+    },
+    {
+      "Id": 310878,
+      "ImgUrl": "./Images/pic3.webp",
+      "ImgName": "Cabins and cottages"
+    },
+    {
+      "Id": 1004008,
+      "ImgUrl": "./Images/farmer_airbnb_live.webp",
+      "ImgName": "Farms and nature"
+    }
+  ]
