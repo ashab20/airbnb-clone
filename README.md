@@ -24,9 +24,9 @@ nmp run build
 
 ## Tech Stack
 
-**Client:** React next js
+**Client:** `React next js`
 
-**Server:** rest api
+**Server:** `rest api`
 
 
 ## 🚀 About Me
