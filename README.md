@@ -19,7 +19,7 @@ nmp run build
 
 ## Demo
 
-[Airbnb](airbnb-next-clone.netlify.app/)
+[Airbnb](https://airbnb-next-clone.netlify.app/)
 
 
 ## Tech Stack
